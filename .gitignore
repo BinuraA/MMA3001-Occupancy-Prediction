@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Ignore Python-generated files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Ignore original occupancy dataset
+data/
