@@ -159,6 +159,33 @@ Documentation is stored in [`docs/html/index.html`](docs/html/index.html).
 
 The documentation describes the preprocessing, modelling and evaluation functions, including their inputs and outputs.
 
+### Dataset Setup (Google Colab)
+
+The original occupancy sensor dataset is not included in this GitHub repository due to its size and data-access considerations.
+
+To reproduce the analysis:
+
+1. Obtain an authorised copy of `5occupancySensor_MayToDec2024_9MRows.csv`.
+2. Upload the dataset to a folder in your own Google Drive.
+3. Open the Jupyter notebook in Google Colab.
+4. Mount your Google Drive when prompted.
+5. Locate the `file_path` variable in the notebook and update it to match the location of your dataset.
+
+For example:
+
+```python
+file_path = (
+    "/content/drive/MyDrive/MMA3001_Project/"
+    "5occupancySensor_MayToDec2024_9MRows.csv"
+)
+```
+
+If your dataset is stored in a different folder, change this path accordingly.
+
+Run the notebook cells in order to reproduce the data processing, model training, evaluation and visualisations.
+
+**Note:** The original dataset must be obtained separately. The GitHub repository contains the source code, tests and documentation, but not the raw occupancy measurements.
+
 ## Limitations and Future Work
 
 Important limitations include:
